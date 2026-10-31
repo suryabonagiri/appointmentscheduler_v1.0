@@ -1,0 +1,13 @@
+com/scheduling/controller/AppointmentController.class
+com/scheduling/exception/AppointmentConflictException.class
+com/scheduling/domain/AppointmentStatus.class
+com/scheduling/exception/AppointmentAlreadyCancelledException.class
+com/scheduling/domain/TimeInterval.class
+com/scheduling/config/RequestLoggingFilter.class
+com/scheduling/controller/AppointmentController$BookingRequest.class
+com/scheduling/exception/GlobalExceptionHandler.class
+com/scheduling/service/AppointmentService.class
+com/scheduling/exception/AppointmentNotFoundException.class
+com/scheduling/dto/ErrorResponse.class
+com/scheduling/AppointmentSchedulerApplication.class
+com/scheduling/domain/Appointment.class

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.scheduling.service.AppointmentServiceTest" time="0.032" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/suryabonagiri/IdeaProjects/appointmentscheduler_v1.0/target/test-classes:/Users/suryabonagiri/IdeaProjects/appointmentscheduler_v1.0/target/classes:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.5/spring-boot-starter-web-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.5/spring-boot-starter-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.5/spring-boot-autoconfigure-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.5/spring-boot-starter-logging-3.2.5.jar:/Users/suryabonagiri/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/suryabonagiri/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/suryabonagiri/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/suryabonagiri/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/suryabonagiri/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/Users/suryabonagiri/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/suryabonagiri/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.5/spring-boot-starter-json-3.2.5.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.4/jackson-databind-2.15.4.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.4/jackson-annotations-2.15.4.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.4/jackson-core-2.15.4.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.4/jackson-datatype-jdk8-2.15.4.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.4/jackson-datatype-jsr310-2.15.4.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.4/jackson-module-parameter-names-2.15.4.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.5/spring-boot-starter-tomcat-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.20/tomcat-embed-core-10.1.20.jar:/Users/suryabonagiri/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.20/tomcat-embed-el-10.1.20.jar:/Users/suryabonagiri/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.20/tomcat-embed-websocket-10.1.20.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-web/6.1.6/spring-web-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-beans/6.1.6/spring-beans-6.1.6.jar:/Users/suryabonagiri/.m2/repository/io/micrometer/micrometer-observation/1.12.5/micrometer-observation-1.12.5.jar:/Users/suryabonagiri/.m2/repository/io/micrometer/micrometer-commons/1.12.5/micrometer-commons-1.12.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-webmvc/6.1.6/spring-webmvc-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-aop/6.1.6/spring-aop-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-context/6.1.6/spring-context-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-expression/6.1.6/spring-expression-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.5/spring-boot-starter-test-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-test/3.2.5/spring-boot-test-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.5/spring-boot-test-autoconfigure-3.2.5.jar:/Users/suryabonagiri/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/suryabonagiri/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/suryabonagiri/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/suryabonagiri/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/suryabonagiri/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/suryabonagiri/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/suryabonagiri/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/suryabonagiri/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/suryabonagiri/.m2/repository/net/bytebuddy/byte-buddy/1.14.13/byte-buddy-1.14.13.jar:/Users/suryabonagiri/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/Users/suryabonagiri/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/suryabonagiri/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/suryabonagiri/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/suryabonagiri/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/suryabonagiri/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/suryabonagiri/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/suryabonagiri/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/suryabonagiri/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/suryabonagiri/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/suryabonagiri/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/suryabonagiri/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.13/byte-buddy-agent-1.14.13.jar:/Users/suryabonagiri/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/suryabonagiri/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/suryabonagiri/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/suryabonagiri/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-core/6.1.6/spring-core-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-jcl/6.1.6/spring-jcl-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-test/6.1.6/spring-test-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/suryabonagiri/IdeaProjects/appointmentscheduler_v1.0/target/surefire/surefirebooter-20261031124030929_3.jar /Users/suryabonagiri/IdeaProjects/appointmentscheduler_v1.0/target/surefire 2026-10-31T12-40-30_891-jvmRun1 surefire-20261031124030929_1tmp surefire_0-20261031124030929_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/suryabonagiri/IdeaProjects/appointmentscheduler_v1.0/target/test-classes:/Users/suryabonagiri/IdeaProjects/appointmentscheduler_v1.0/target/classes:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.5/spring-boot-starter-web-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.5/spring-boot-starter-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.5/spring-boot-autoconfigure-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.5/spring-boot-starter-logging-3.2.5.jar:/Users/suryabonagiri/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/suryabonagiri/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/suryabonagiri/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/suryabonagiri/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/suryabonagiri/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/Users/suryabonagiri/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/suryabonagiri/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.5/spring-boot-starter-json-3.2.5.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.4/jackson-databind-2.15.4.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.4/jackson-annotations-2.15.4.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.4/jackson-core-2.15.4.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.4/jackson-datatype-jdk8-2.15.4.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.4/jackson-datatype-jsr310-2.15.4.jar:/Users/suryabonagiri/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.4/jackson-module-parameter-names-2.15.4.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.5/spring-boot-starter-tomcat-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.20/tomcat-embed-core-10.1.20.jar:/Users/suryabonagiri/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.20/tomcat-embed-el-10.1.20.jar:/Users/suryabonagiri/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.20/tomcat-embed-websocket-10.1.20.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-web/6.1.6/spring-web-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-beans/6.1.6/spring-beans-6.1.6.jar:/Users/suryabonagiri/.m2/repository/io/micrometer/micrometer-observation/1.12.5/micrometer-observation-1.12.5.jar:/Users/suryabonagiri/.m2/repository/io/micrometer/micrometer-commons/1.12.5/micrometer-commons-1.12.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-webmvc/6.1.6/spring-webmvc-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-aop/6.1.6/spring-aop-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-context/6.1.6/spring-context-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-expression/6.1.6/spring-expression-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.5/spring-boot-starter-test-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-test/3.2.5/spring-boot-test-3.2.5.jar:/Users/suryabonagiri/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.5/spring-boot-test-autoconfigure-3.2.5.jar:/Users/suryabonagiri/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/suryabonagiri/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/suryabonagiri/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/suryabonagiri/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/suryabonagiri/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/suryabonagiri/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/suryabonagiri/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/suryabonagiri/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/suryabonagiri/.m2/repository/net/bytebuddy/byte-buddy/1.14.13/byte-buddy-1.14.13.jar:/Users/suryabonagiri/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/Users/suryabonagiri/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/suryabonagiri/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/suryabonagiri/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/suryabonagiri/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/suryabonagiri/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/suryabonagiri/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/suryabonagiri/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/suryabonagiri/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/suryabonagiri/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/suryabonagiri/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/suryabonagiri/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.13/byte-buddy-agent-1.14.13.jar:/Users/suryabonagiri/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/suryabonagiri/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/suryabonagiri/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/suryabonagiri/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-core/6.1.6/spring-core-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-jcl/6.1.6/spring-jcl-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/springframework/spring-test/6.1.6/spring-test-6.1.6.jar:/Users/suryabonagiri/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/suryabonagiri"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/suryabonagiri/IdeaProjects/appointmentscheduler_v1.0"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/suryabonagiri/IdeaProjects/appointmentscheduler_v1.0/target/surefire/surefirebooter-20261031124030929_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.6+8-LTS-188"/>
+    <property name="user.name" value="suryabonagiri"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.6.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/suryabonagiri/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/rd/03h6fg856y37k022gjlbf_2h0000gn/T/"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="/Users/suryabonagiri/IdeaProjects/appointmentscheduler_v1.0"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="51968"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/suryabonagiri/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.6+8-LTS-188"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr([%15.15t]){faint} %clr(%-35.35logger{34}){cyan} %clr(:){faint} %m%n"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[appointment-scheduler] "/>
+  </properties>
+  <testcase name="testSuccessfulBooking" classname="com.scheduling.service.AppointmentServiceTest" time="0.002">
+    <system-out><![CDATA[2026-10-31 12:40:33.069 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.069  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A1, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.069  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=A1, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.069 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectNullInterval" classname="com.scheduling.service.AppointmentServiceTest" time="0.001"/>
+  <testcase name="shouldRejectCancellingNonExistentAppointment" classname="com.scheduling.service.AppointmentServiceTest" time="0.001">
+    <system-out><![CDATA[2026-10-31 12:40:33.072 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for cancellation on provider: Provider-1
+2026-10-31 12:40:33.072  INFO [           main] c.s.service.AppointmentService      : Processing cancellation request: providerId=Provider-1, appointmentId=non-existent-id
+2026-10-31 12:40:33.073  WARN [           main] c.s.service.AppointmentService      : Cancellation failed: No appointments found for provider Provider-1
+2026-10-31 12:40:33.073 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.073 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.073  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A1, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.073  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=A1, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.073 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.073 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for cancellation on provider: Provider-1
+2026-10-31 12:40:33.073  INFO [           main] c.s.service.AppointmentService      : Processing cancellation request: providerId=Provider-1, appointmentId=different-id
+2026-10-31 12:40:33.073  WARN [           main] c.s.service.AppointmentService      : Cancellation failed: Appointment [different-id] not found for provider [Provider-1]
+2026-10-31 12:40:33.073 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectBookingInThePast" classname="com.scheduling.service.AppointmentServiceTest" time="0.001">
+    <system-out><![CDATA[2026-10-31 12:40:33.073  WARN [           main] c.s.service.AppointmentService      : Booking validation failed: Start time [1999-01-01T00:00:00Z] is in the past (before today's UTC start [2026-10-31T00:00:00Z])
+2026-10-31 12:40:33.073  WARN [           main] c.s.service.AppointmentService      : Booking validation failed: Start time [2026-10-30T10:00:00Z] is in the past (before today's UTC start [2026-10-31T00:00:00Z])
+]]></system-out>
+  </testcase>
+  <testcase name="testConcurrentReadWriteThroughput" classname="com.scheduling.service.AppointmentServiceTest" time="0.012">
+    <system-out><![CDATA[2026-10-31 12:40:33.074 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.074  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=INIT-1, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T10:30:00Z]
+2026-10-31 12:40:33.074  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=INIT-1, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.074 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.081 DEBUG [pool-3-thread-1] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 1 total appointments retrieved
+2026-10-31 12:40:33.081 DEBUG [pool-3-thread-3] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 1 total appointments retrieved
+2026-10-31 12:40:33.081 DEBUG [ol-3-thread-110] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.081 DEBUG [pool-3-thread-2] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 1 total appointments retrieved
+2026-10-31 12:40:33.081  INFO [ol-3-thread-110] c.s.service.AppointmentService      : Processing booking request: id=W-9, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T21:00:00Z, end=2026-11-01T21:30:00Z]
+2026-10-31 12:40:33.081  INFO [ol-3-thread-110] c.s.service.AppointmentService      : Successfully booked appointment: id=W-9, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.081 DEBUG [ol-3-thread-110] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.081 DEBUG [ool-3-thread-11] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.081 DEBUG [ool-3-thread-13] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.081 DEBUG [pool-3-thread-5] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.081 DEBUG [ool-3-thread-12] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [pool-3-thread-6] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-15] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.081 DEBUG [pool-3-thread-4] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-16] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-14] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-17] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [pool-3-thread-8] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-18] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [pool-3-thread-9] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [pool-3-thread-7] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-10] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-19] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-21] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-22] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-20] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.082 DEBUG [ool-3-thread-23] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-25] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-24] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-26] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-27] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-29] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-31] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-28] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-30] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-34] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-33] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-35] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-37] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-32] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-36] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-38] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-39] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-44] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-41] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-40] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-48] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-42] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-43] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-51] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-45] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-47] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-52] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-56] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-46] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-58] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-59] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-60] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-49] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-61] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-63] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-62] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-50] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-70] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-53] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-54] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-74] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-55] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-57] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-76] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-75] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-64] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-65] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-66] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-67] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-79] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-78] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-68] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-82] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-69] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-84] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-83] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-86] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-85] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-87] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-71] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-90] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-72] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-91] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-94] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-96] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-73] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-99] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-98] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ol-3-thread-100] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.083 DEBUG [ool-3-thread-77] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-80] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-81] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ol-3-thread-107] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-88] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-89] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-92] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-93] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-95] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ool-3-thread-97] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 2 total appointments retrieved
+2026-10-31 12:40:33.084 DEBUG [ol-3-thread-101] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.084 DEBUG [ol-3-thread-102] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.084 DEBUG [ol-3-thread-103] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.084 DEBUG [ol-3-thread-104] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.084 DEBUG [ol-3-thread-105] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.084 DEBUG [ol-3-thread-106] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.084 DEBUG [ol-3-thread-108] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.084 DEBUG [ol-3-thread-109] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-RW
+2026-10-31 12:40:33.084  INFO [ol-3-thread-107] c.s.service.AppointmentService      : Processing booking request: id=W-6, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T18:00:00Z, end=2026-11-01T18:30:00Z]
+2026-10-31 12:40:33.085  INFO [ol-3-thread-107] c.s.service.AppointmentService      : Successfully booked appointment: id=W-6, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.085 DEBUG [ol-3-thread-107] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.085  INFO [ol-3-thread-101] c.s.service.AppointmentService      : Processing booking request: id=W-0, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T12:00:00Z, end=2026-11-01T12:30:00Z]
+2026-10-31 12:40:33.085  INFO [ol-3-thread-101] c.s.service.AppointmentService      : Successfully booked appointment: id=W-0, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.085 DEBUG [ol-3-thread-101] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.085  INFO [ol-3-thread-102] c.s.service.AppointmentService      : Processing booking request: id=W-1, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T13:00:00Z, end=2026-11-01T13:30:00Z]
+2026-10-31 12:40:33.085  INFO [ol-3-thread-102] c.s.service.AppointmentService      : Successfully booked appointment: id=W-1, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.085 DEBUG [ol-3-thread-102] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.085  INFO [ol-3-thread-103] c.s.service.AppointmentService      : Processing booking request: id=W-2, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T14:00:00Z, end=2026-11-01T14:30:00Z]
+2026-10-31 12:40:33.085  INFO [ol-3-thread-103] c.s.service.AppointmentService      : Successfully booked appointment: id=W-2, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.085 DEBUG [ol-3-thread-103] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.085  INFO [ol-3-thread-104] c.s.service.AppointmentService      : Processing booking request: id=W-3, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T15:00:00Z, end=2026-11-01T15:30:00Z]
+2026-10-31 12:40:33.085  INFO [ol-3-thread-104] c.s.service.AppointmentService      : Successfully booked appointment: id=W-3, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.085 DEBUG [ol-3-thread-104] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.085  INFO [ol-3-thread-105] c.s.service.AppointmentService      : Processing booking request: id=W-4, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T16:00:00Z, end=2026-11-01T16:30:00Z]
+2026-10-31 12:40:33.085  INFO [ol-3-thread-105] c.s.service.AppointmentService      : Successfully booked appointment: id=W-4, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.085 DEBUG [ol-3-thread-105] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.085  INFO [ol-3-thread-106] c.s.service.AppointmentService      : Processing booking request: id=W-5, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T17:00:00Z, end=2026-11-01T17:30:00Z]
+2026-10-31 12:40:33.085  INFO [ol-3-thread-106] c.s.service.AppointmentService      : Successfully booked appointment: id=W-5, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.085 DEBUG [ol-3-thread-106] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.085  INFO [ol-3-thread-108] c.s.service.AppointmentService      : Processing booking request: id=W-7, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T19:00:00Z, end=2026-11-01T19:30:00Z]
+2026-10-31 12:40:33.085  INFO [ol-3-thread-108] c.s.service.AppointmentService      : Successfully booked appointment: id=W-7, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.085 DEBUG [ol-3-thread-108] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.085  INFO [ol-3-thread-109] c.s.service.AppointmentService      : Processing booking request: id=W-8, providerId=Provider-RW, interval=TimeInterval[start=2026-11-01T20:00:00Z, end=2026-11-01T20:30:00Z]
+2026-10-31 12:40:33.085  INFO [ol-3-thread-109] c.s.service.AppointmentService      : Successfully booked appointment: id=W-8, providerId=Provider-RW, status=ACTIVE
+2026-10-31 12:40:33.085 DEBUG [ol-3-thread-109] c.s.service.AppointmentService      : Released write lock for provider: Provider-RW
+2026-10-31 12:40:33.086 DEBUG [           main] c.s.service.AppointmentService      : Querying appointments for provider [Provider-RW]: 11 total appointments retrieved
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectDuplicateAppointmentIdForSameProvider" classname="com.scheduling.service.AppointmentServiceTest" time="0.001">
+    <system-out><![CDATA[2026-10-31 12:40:33.086 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.086  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=DUP-1, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.086  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=DUP-1, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.086 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.087 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.087  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=DUP-1, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T12:00:00Z, end=2026-11-01T13:00:00Z]
+2026-10-31 12:40:33.087  WARN [           main] c.s.service.AppointmentService      : Booking validation failed: Duplicate appointment ID [DUP-1] already exists for provider [Provider-1]
+2026-10-31 12:40:33.087 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnClearResultForAlreadyCancelled" classname="com.scheduling.service.AppointmentServiceTest" time="0.0">
+    <system-out><![CDATA[2026-10-31 12:40:33.087 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.087  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A1, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.087  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=A1, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.087 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.087 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for cancellation on provider: Provider-1
+2026-10-31 12:40:33.087  INFO [           main] c.s.service.AppointmentService      : Processing cancellation request: providerId=Provider-1, appointmentId=A1
+2026-10-31 12:40:33.087  INFO [           main] c.s.service.AppointmentService      : Successfully cancelled appointment: id=A1, providerId=Provider-1, slot freed=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.087 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.087 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for cancellation on provider: Provider-1
+2026-10-31 12:40:33.087  INFO [           main] c.s.service.AppointmentService      : Processing cancellation request: providerId=Provider-1, appointmentId=A1
+2026-10-31 12:40:33.087  INFO [           main] c.s.service.AppointmentService      : Cancellation notice: Appointment [A1] for provider [Provider-1] is already cancelled
+2026-10-31 12:40:33.087 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+]]></system-out>
+  </testcase>
+  <testcase name="testInvalidInputsRejected" classname="com.scheduling.service.AppointmentServiceTest" time="0.0"/>
+  <testcase name="testConcurrentBookingsSameSlot" classname="com.scheduling.service.AppointmentServiceTest" time="0.006">
+    <system-out><![CDATA[2026-10-31 12:40:33.089 DEBUG [pool-4-thread-1] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.089  INFO [pool-4-thread-1] c.s.service.AppointmentService      : Processing booking request: id=A-0, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.089  INFO [pool-4-thread-1] c.s.service.AppointmentService      : Successfully booked appointment: id=A-0, providerId=Provider-Concurrent, status=ACTIVE
+2026-10-31 12:40:33.089 DEBUG [pool-4-thread-1] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.089 DEBUG [pool-4-thread-2] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.089  INFO [pool-4-thread-2] c.s.service.AppointmentService      : Processing booking request: id=A-1, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.089 DEBUG [pool-4-thread-3] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.089  WARN [pool-4-thread-2] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-2] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090  INFO [pool-4-thread-3] c.s.service.AppointmentService      : Processing booking request: id=A-2, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.090  WARN [pool-4-thread-3] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-4] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-5] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-3] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090  INFO [pool-4-thread-4] c.s.service.AppointmentService      : Processing booking request: id=A-3, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.090  WARN [pool-4-thread-4] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-6] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-4] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-7] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090  INFO [pool-4-thread-6] c.s.service.AppointmentService      : Processing booking request: id=A-5, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-8] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090  WARN [pool-4-thread-6] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-6] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090  INFO [pool-4-thread-5] c.s.service.AppointmentService      : Processing booking request: id=A-4, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.090 DEBUG [ool-4-thread-10] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-9] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090  WARN [pool-4-thread-5] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.090 DEBUG [ool-4-thread-11] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [pool-4-thread-5] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090  INFO [ool-4-thread-11] c.s.service.AppointmentService      : Processing booking request: id=A-10, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.090 DEBUG [ool-4-thread-12] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [ool-4-thread-13] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090  WARN [ool-4-thread-11] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.090 DEBUG [ool-4-thread-15] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [ool-4-thread-14] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [ool-4-thread-11] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090  INFO [ool-4-thread-14] c.s.service.AppointmentService      : Processing booking request: id=A-13, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.090 DEBUG [ool-4-thread-16] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [ool-4-thread-17] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090 DEBUG [ool-4-thread-18] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.090  WARN [ool-4-thread-14] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-14] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  INFO [pool-4-thread-7] c.s.service.AppointmentService      : Processing booking request: id=A-6, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-19] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  WARN [pool-4-thread-7] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-20] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091 DEBUG [pool-4-thread-7] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-21] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  INFO [ool-4-thread-20] c.s.service.AppointmentService      : Processing booking request: id=A-19, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-22] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-23] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  WARN [ool-4-thread-20] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-24] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  INFO [ool-4-thread-24] c.s.service.AppointmentService      : Processing booking request: id=A-23, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-20] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  WARN [ool-4-thread-24] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-25] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-26] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-27] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  INFO [pool-4-thread-8] c.s.service.AppointmentService      : Processing booking request: id=A-7, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-24] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  WARN [pool-4-thread-8] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.091 DEBUG [pool-4-thread-8] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  INFO [ool-4-thread-10] c.s.service.AppointmentService      : Processing booking request: id=A-9, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-28] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  WARN [ool-4-thread-10] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-29] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-10] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-30] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  INFO [ool-4-thread-29] c.s.service.AppointmentService      : Processing booking request: id=A-28, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-31] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  WARN [ool-4-thread-29] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-32] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-29] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  INFO [ool-4-thread-32] c.s.service.AppointmentService      : Processing booking request: id=A-31, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.091  WARN [ool-4-thread-32] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-33] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-32] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  INFO [pool-4-thread-9] c.s.service.AppointmentService      : Processing booking request: id=A-8, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.091 DEBUG [ool-4-thread-34] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.091  WARN [pool-4-thread-9] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.092 DEBUG [pool-4-thread-9] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-36] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  INFO [ool-4-thread-12] c.s.service.AppointmentService      : Processing booking request: id=A-11, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-35] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-37] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  WARN [ool-4-thread-12] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-38] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-12] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  INFO [ool-4-thread-13] c.s.service.AppointmentService      : Processing booking request: id=A-12, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-39] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  WARN [ool-4-thread-13] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-40] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-13] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  INFO [ool-4-thread-15] c.s.service.AppointmentService      : Processing booking request: id=A-14, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.092  WARN [ool-4-thread-15] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-41] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-42] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  INFO [ool-4-thread-16] c.s.service.AppointmentService      : Processing booking request: id=A-15, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-15] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-43] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  WARN [ool-4-thread-16] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-16] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  INFO [ool-4-thread-17] c.s.service.AppointmentService      : Processing booking request: id=A-16, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.092  WARN [ool-4-thread-17] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-44] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-45] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-17] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  INFO [ool-4-thread-18] c.s.service.AppointmentService      : Processing booking request: id=A-17, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-46] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  WARN [ool-4-thread-18] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-18] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  INFO [ool-4-thread-19] c.s.service.AppointmentService      : Processing booking request: id=A-18, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-47] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  WARN [ool-4-thread-19] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-48] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-19] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  INFO [ool-4-thread-21] c.s.service.AppointmentService      : Processing booking request: id=A-20, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-49] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-50] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  WARN [ool-4-thread-21] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.092 DEBUG [ool-4-thread-21] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.092  INFO [ool-4-thread-22] c.s.service.AppointmentService      : Processing booking request: id=A-21, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-22] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-22] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-23] c.s.service.AppointmentService      : Processing booking request: id=A-22, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-23] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-23] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-25] c.s.service.AppointmentService      : Processing booking request: id=A-24, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-25] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-25] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-26] c.s.service.AppointmentService      : Processing booking request: id=A-25, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-26] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-26] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-27] c.s.service.AppointmentService      : Processing booking request: id=A-26, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-27] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-27] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-28] c.s.service.AppointmentService      : Processing booking request: id=A-27, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-28] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-28] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-30] c.s.service.AppointmentService      : Processing booking request: id=A-29, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-30] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-30] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-31] c.s.service.AppointmentService      : Processing booking request: id=A-30, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-31] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-31] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-33] c.s.service.AppointmentService      : Processing booking request: id=A-32, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-33] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-33] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-34] c.s.service.AppointmentService      : Processing booking request: id=A-33, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-34] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-34] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-36] c.s.service.AppointmentService      : Processing booking request: id=A-35, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-36] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-36] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-35] c.s.service.AppointmentService      : Processing booking request: id=A-34, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-35] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-35] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-37] c.s.service.AppointmentService      : Processing booking request: id=A-36, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-37] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-37] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-38] c.s.service.AppointmentService      : Processing booking request: id=A-37, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-38] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-38] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-39] c.s.service.AppointmentService      : Processing booking request: id=A-38, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-39] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-39] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.093  INFO [ool-4-thread-40] c.s.service.AppointmentService      : Processing booking request: id=A-39, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.093  WARN [ool-4-thread-40] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.093 DEBUG [ool-4-thread-40] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.094  INFO [ool-4-thread-41] c.s.service.AppointmentService      : Processing booking request: id=A-40, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.094  WARN [ool-4-thread-41] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.094 DEBUG [ool-4-thread-41] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.094  INFO [ool-4-thread-42] c.s.service.AppointmentService      : Processing booking request: id=A-41, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.094  WARN [ool-4-thread-42] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.094 DEBUG [ool-4-thread-42] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.094  INFO [ool-4-thread-43] c.s.service.AppointmentService      : Processing booking request: id=A-42, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.094  WARN [ool-4-thread-43] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.094 DEBUG [ool-4-thread-43] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.094  INFO [ool-4-thread-45] c.s.service.AppointmentService      : Processing booking request: id=A-44, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.094  WARN [ool-4-thread-45] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.094 DEBUG [ool-4-thread-45] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.094  INFO [ool-4-thread-44] c.s.service.AppointmentService      : Processing booking request: id=A-43, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.094  WARN [ool-4-thread-44] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.094 DEBUG [ool-4-thread-44] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.094  INFO [ool-4-thread-46] c.s.service.AppointmentService      : Processing booking request: id=A-45, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.094  WARN [ool-4-thread-46] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.094 DEBUG [ool-4-thread-46] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.094  INFO [ool-4-thread-47] c.s.service.AppointmentService      : Processing booking request: id=A-46, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.094  WARN [ool-4-thread-47] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.094 DEBUG [ool-4-thread-47] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.094  INFO [ool-4-thread-48] c.s.service.AppointmentService      : Processing booking request: id=A-47, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.094  WARN [ool-4-thread-48] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.094 DEBUG [ool-4-thread-48] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.094  INFO [ool-4-thread-49] c.s.service.AppointmentService      : Processing booking request: id=A-48, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.094  WARN [ool-4-thread-49] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.094 DEBUG [ool-4-thread-49] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+2026-10-31 12:40:33.094  INFO [ool-4-thread-50] c.s.service.AppointmentService      : Processing booking request: id=A-49, providerId=Provider-Concurrent, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.094  WARN [ool-4-thread-50] c.s.service.AppointmentService      : Conflict detected for provider [Provider-Concurrent]: Requested interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]] overlaps existing active appointment [A-0] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.094 DEBUG [ool-4-thread-50] c.s.service.AppointmentService      : Released write lock for provider: Provider-Concurrent
+]]></system-out>
+  </testcase>
+  <testcase name="testDifferentProvidersDoNotConflict" classname="com.scheduling.service.AppointmentServiceTest" time="0.0">
+    <system-out><![CDATA[2026-10-31 12:40:33.095 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.095  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A1, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.095  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=A1, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.095 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.095 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-2
+2026-10-31 12:40:33.095  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A2, providerId=Provider-2, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.095  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=A2, providerId=Provider-2, status=ACTIVE
+2026-10-31 12:40:33.095 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-2
+]]></system-out>
+  </testcase>
+  <testcase name="testCancellationFreesTimeSlot" classname="com.scheduling.service.AppointmentServiceTest" time="0.0">
+    <system-out><![CDATA[2026-10-31 12:40:33.096 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.096  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A1, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.096  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=A1, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.096 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.096 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for cancellation on provider: Provider-1
+2026-10-31 12:40:33.096  INFO [           main] c.s.service.AppointmentService      : Processing cancellation request: providerId=Provider-1, appointmentId=A1
+2026-10-31 12:40:33.096  INFO [           main] c.s.service.AppointmentService      : Successfully cancelled appointment: id=A1, providerId=Provider-1, slot freed=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.096 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.096 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.096  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A2, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.096  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=A2, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.096 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectNullOrBlankProviderId" classname="com.scheduling.service.AppointmentServiceTest" time="0.001">
+    <system-out><![CDATA[2026-10-31 12:40:33.096  WARN [           main] c.s.service.AppointmentService      : Booking validation failed: Provider ID is missing or blank
+2026-10-31 12:40:33.097  WARN [           main] c.s.service.AppointmentService      : Booking validation failed: Provider ID is missing or blank
+2026-10-31 12:40:33.097  WARN [           main] c.s.service.AppointmentService      : Cancellation validation failed: Provider ID missing
+2026-10-31 12:40:33.097  WARN [           main] c.s.service.AppointmentService      : Cancellation validation failed: Provider ID missing
+]]></system-out>
+  </testcase>
+  <testcase name="shouldAllowBookingForToday" classname="com.scheduling.service.AppointmentServiceTest" time="0.0">
+    <system-out><![CDATA[2026-10-31 12:40:33.097 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.097  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=TODAY-1, providerId=Provider-1, interval=TimeInterval[start=2026-10-31T23:00:00Z, end=2026-10-31T23:30:00Z]
+2026-10-31 12:40:33.097  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=TODAY-1, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.097 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectNullOrBlankAppointmentId" classname="com.scheduling.service.AppointmentServiceTest" time="0.001">
+    <system-out><![CDATA[2026-10-31 12:40:33.098  WARN [           main] c.s.service.AppointmentService      : Booking validation failed: Appointment ID is missing or blank
+2026-10-31 12:40:33.098  WARN [           main] c.s.service.AppointmentService      : Booking validation failed: Appointment ID is missing or blank
+2026-10-31 12:40:33.098  WARN [           main] c.s.service.AppointmentService      : Cancellation validation failed: Appointment ID missing
+2026-10-31 12:40:33.098  WARN [           main] c.s.service.AppointmentService      : Cancellation validation failed: Appointment ID missing
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectNegativeDuration" classname="com.scheduling.service.AppointmentServiceTest" time="0.0"/>
+  <testcase name="shouldAllowSameAppointmentIdForDifferentProviders" classname="com.scheduling.service.AppointmentServiceTest" time="0.0">
+    <system-out><![CDATA[2026-10-31 12:40:33.099 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.099  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=SHARED-ID, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.099  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=SHARED-ID, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.099 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.099 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-2
+2026-10-31 12:40:33.099  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=SHARED-ID, providerId=Provider-2, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.099  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=SHARED-ID, providerId=Provider-2, status=ACTIVE
+2026-10-31 12:40:33.099 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-2
+]]></system-out>
+  </testcase>
+  <testcase name="testAdjacentAppointmentsAllowed" classname="com.scheduling.service.AppointmentServiceTest" time="0.001">
+    <system-out><![CDATA[2026-10-31 12:40:33.100 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.100  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A1, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.100  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=A1, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.100 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.100 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.100  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A2, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T11:00:00Z, end=2026-11-01T12:00:00Z]
+2026-10-31 12:40:33.100  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=A2, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.100 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+]]></system-out>
+  </testcase>
+  <testcase name="testSameProviderOverlapRejection" classname="com.scheduling.service.AppointmentServiceTest" time="0.001">
+    <system-out><![CDATA[2026-10-31 12:40:33.100 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.100  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A1, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]
+2026-10-31 12:40:33.100  INFO [           main] c.s.service.AppointmentService      : Successfully booked appointment: id=A1, providerId=Provider-1, status=ACTIVE
+2026-10-31 12:40:33.100 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+2026-10-31 12:40:33.100 DEBUG [           main] c.s.service.AppointmentService      : Acquiring write lock for provider: Provider-1
+2026-10-31 12:40:33.100  INFO [           main] c.s.service.AppointmentService      : Processing booking request: id=A2, providerId=Provider-1, interval=TimeInterval[start=2026-11-01T10:30:00Z, end=2026-11-01T11:30:00Z]
+2026-10-31 12:40:33.100  WARN [           main] c.s.service.AppointmentService      : Conflict detected for provider [Provider-1]: Requested interval [TimeInterval[start=2026-11-01T10:30:00Z, end=2026-11-01T11:30:00Z]] overlaps existing active appointment [A1] with interval [TimeInterval[start=2026-11-01T10:00:00Z, end=2026-11-01T11:00:00Z]]
+2026-10-31 12:40:33.100 DEBUG [           main] c.s.service.AppointmentService      : Released write lock for provider: Provider-1
+]]></system-out>
+  </testcase>
+</testsuite>
